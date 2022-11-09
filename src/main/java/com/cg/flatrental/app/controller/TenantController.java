@@ -103,7 +103,7 @@ public class TenantController {
 	public ResponseEntity<String>  deleteFlatBooking(@PathVariable("flatbooking_id") Long BookingId){
 		iFlatBookingService.deleteFlatBooking(BookingId);
 		ResponseEntity<String> response = new ResponseEntity<String>("Successfully Deleted", HttpStatus.NO_CONTENT);
-		return response;
+		return response; //ok
 	}
 		
 }
